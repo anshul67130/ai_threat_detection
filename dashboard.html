@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Threat Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Real-Time Threat Dashboard</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Payload</th>
+            </tr>
+        </thead>
+        <tbody id="logTable">
+            <!-- Rows will be added dynamically -->
+        </tbody>
+    </table>
+
+    <script>
+        function fetchLogs() {
+            fetch('/logs')
+                .then(response => response.json())
+                .then(data => {
+                    const table = document.getElementById('logTable');
+                    table.innerHTML = ''; // Clear existing rows
+
+                    data.forEach(log => {
+                        const row = document.createElement('tr');
+                        const timestampCell = document.createElement('td');
+                        const payloadCell = document.createElement('td');
+
+                        timestampCell.textContent = log.timestamp;
+                        payloadCell.textContent = log.payload;
+
+                        row.appendChild(timestampCell);
+                        row.appendChild(payloadCell);
+                        table.appendChild(row);
+                    });
+                })
+                .catch(error => console.error('Error fetching logs:', error));
+        }
+
+        // Fetch logs every 2 seconds
+        setInterval(fetchLogs, 2000);
+        fetchLogs(); // Initial fetch
+    </script>
+</body>
+</html>

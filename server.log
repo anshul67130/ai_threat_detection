@@ -1,0 +1,165 @@
+2025-01-10 20:18:41,631 -  * Debugger is active!
+2025-01-10 20:18:41,631 -  * Debugger PIN: 632-278-120
+2025-01-10 20:22:14,681 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-10 20:22:14,681 - [33mPress CTRL+C to quit[0m
+2025-01-10 20:22:14,682 -  * Restarting with stat
+2025-01-10 20:22:15,689 -  * Debugger is active!
+2025-01-10 20:22:15,690 -  * Debugger PIN: 632-278-120
+2025-01-10 20:22:28,634 - 127.0.0.1 - - [10/Jan/2025 20:22:28] "GET / HTTP/1.1" 200 -
+2025-01-10 20:22:32,377 - Safe request processed: username=admin&password=admin
+2025-01-10 20:22:32,378 - 127.0.0.1 - - [10/Jan/2025 20:22:32] "POST /submit HTTP/1.1" 200 -
+2025-01-10 20:22:40,321 - Safe request processed: username=admin' --&password=admin
+2025-01-10 20:22:40,321 - 127.0.0.1 - - [10/Jan/2025 20:22:40] "POST /submit HTTP/1.1" 200 -
+2025-01-10 20:23:25,922 - Safe request processed: username=admin' --&password=admin
+2025-01-10 20:23:25,923 - 127.0.0.1 - - [10/Jan/2025 20:23:25] "POST /submit HTTP/1.1" 200 -
+2025-01-10 20:25:09,692 - Malicious payload detected: SELECT * FROM users WHERE username='admin'--
+2025-01-10 20:25:09,711 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-10 20:25:09,711 - [33mPress CTRL+C to quit[0m
+2025-01-10 20:25:09,712 -  * Restarting with stat
+2025-01-10 20:25:10,492 - Malicious payload detected: SELECT * FROM users WHERE username='admin'--
+2025-01-10 20:25:10,503 -  * Debugger is active!
+2025-01-10 20:25:10,504 -  * Debugger PIN: 632-278-120
+2025-01-10 20:26:13,961 - Safe request processed: username=username=user123&password=securepassword&password=admin
+2025-01-10 20:26:13,962 - 127.0.0.1 - - [10/Jan/2025 20:26:13] "POST /submit HTTP/1.1" 200 -
+2025-01-10 20:26:44,833 - Safe request processed: username=SELECT * FROM users WHERE username='admin'--&password=admin
+2025-01-10 20:26:44,834 - 127.0.0.1 - - [10/Jan/2025 20:26:44] "POST /submit HTTP/1.1" 200 -
+2025-01-10 20:32:39,997 - Malicious payload detected: SELECT * FROM users WHERE username='admin'--
+2025-01-10 20:32:40,017 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-10 20:32:40,017 - [33mPress CTRL+C to quit[0m
+2025-01-10 20:32:40,017 -  * Restarting with stat
+2025-01-10 20:32:40,840 - Malicious payload detected: SELECT * FROM users WHERE username='admin'--
+2025-01-10 20:32:40,854 -  * Debugger is active!
+2025-01-10 20:32:40,854 -  * Debugger PIN: 998-096-148
+2025-01-10 20:32:49,458 - 127.0.0.1 - - [10/Jan/2025 20:32:49] "GET / HTTP/1.1" 200 -
+2025-01-10 20:32:57,974 - Malicious payload detected: username=admin' --&password=admin
+2025-01-10 20:32:57,975 - Blocked malicious request: username=admin' --&password=admin
+2025-01-10 20:32:57,976 - 127.0.0.1 - - [10/Jan/2025 20:32:57] "[31m[1mPOST /submit HTTP/1.1[0m" 403 -
+2025-01-10 20:33:04,405 - Malicious payload detected: username=admin&password=admin
+2025-01-10 20:33:04,405 - Blocked malicious request: username=admin&password=admin
+2025-01-10 20:33:04,405 - 127.0.0.1 - - [10/Jan/2025 20:33:04] "[31m[1mPOST /submit HTTP/1.1[0m" 403 -
+2025-01-10 20:33:08,878 - Malicious payload detected: username=admin&password=admin
+2025-01-10 20:33:08,878 - Blocked malicious request: username=admin&password=admin
+2025-01-10 20:33:08,879 - 127.0.0.1 - - [10/Jan/2025 20:33:08] "[31m[1mPOST /submit HTTP/1.1[0m" 403 -
+2025-01-10 20:33:16,849 - Malicious payload detected: username=admin&password=password
+2025-01-10 20:33:16,850 - Blocked malicious request: username=admin&password=password
+2025-01-10 20:33:16,850 - 127.0.0.1 - - [10/Jan/2025 20:33:16] "[31m[1mPOST /submit HTTP/1.1[0m" 403 -
+2025-01-10 20:33:43,953 -  * Detected change in '/home/anshul/projects/ai_threat_detection/server_with_detection.py', reloading
+2025-01-10 20:33:44,139 -  * Restarting with stat
+2025-01-10 20:33:45,143 -  * Debugger is active!
+2025-01-10 20:33:45,144 -  * Debugger PIN: 998-096-148
+2025-01-10 20:33:54,393 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-10 20:33:54,393 - [33mPress CTRL+C to quit[0m
+2025-01-10 20:33:54,401 -  * Restarting with stat
+2025-01-10 20:33:55,413 -  * Debugger is active!
+2025-01-10 20:33:55,414 -  * Debugger PIN: 632-278-120
+2025-01-10 20:33:59,150 - 127.0.0.1 - - [10/Jan/2025 20:33:59] "GET / HTTP/1.1" 200 -
+2025-01-10 20:34:01,758 - Malicious payload detected: username=admin&password=dmin
+2025-01-10 20:34:01,759 - Blocked malicious request: username=admin&password=dmin
+2025-01-10 20:34:01,760 - 127.0.0.1 - - [10/Jan/2025 20:34:01] "[31m[1mPOST /submit HTTP/1.1[0m" 403 -
+2025-01-10 20:36:32,775 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-10 20:36:32,775 - [33mPress CTRL+C to quit[0m
+2025-01-10 20:36:32,775 -  * Restarting with stat
+2025-01-10 20:36:33,571 -  * Debugger is active!
+2025-01-10 20:36:33,571 -  * Debugger PIN: 998-096-148
+2025-01-10 20:36:43,253 - 127.0.0.1 - - [10/Jan/2025 20:36:43] "GET / HTTP/1.1" 200 -
+2025-01-10 20:36:47,284 - Safe request processed: username=admin&password=admin
+2025-01-10 20:36:47,284 - 127.0.0.1 - - [10/Jan/2025 20:36:47] "POST /submit HTTP/1.1" 200 -
+2025-01-10 20:36:56,542 - Safe request processed: username=admin' --&password=admin
+2025-01-10 20:36:56,542 - 127.0.0.1 - - [10/Jan/2025 20:36:56] "POST /submit HTTP/1.1" 200 -
+2025-01-10 20:37:05,267 - Safe request processed: username=' Or 1=1 --&password=admin
+2025-01-10 20:37:05,268 - 127.0.0.1 - - [10/Jan/2025 20:37:05] "POST /submit HTTP/1.1" 200 -
+2025-01-10 20:37:35,940 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-10 20:37:35,940 - [33mPress CTRL+C to quit[0m
+2025-01-10 20:37:35,941 -  * Restarting with stat
+2025-01-10 20:37:36,983 -  * Debugger is active!
+2025-01-10 20:37:36,984 -  * Debugger PIN: 998-096-148
+2025-01-10 20:37:38,867 - Malicious payload detected: username=' Or 1=1 --&password=admin
+2025-01-10 20:37:38,867 - Blocked malicious request: username=' Or 1=1 --&password=admin
+2025-01-10 20:37:38,868 - 127.0.0.1 - - [10/Jan/2025 20:37:38] "[31m[1mPOST /submit HTTP/1.1[0m" 403 -
+2025-01-10 20:37:44,561 - Malicious payload detected: username=user&password=admin
+2025-01-10 20:37:44,562 - Blocked malicious request: username=user&password=admin
+2025-01-10 20:37:44,563 - 127.0.0.1 - - [10/Jan/2025 20:37:44] "[31m[1mPOST /submit HTTP/1.1[0m" 403 -
+2025-01-10 20:37:52,256 - Safe request processed: username=user&password=user
+2025-01-10 20:37:52,257 - 127.0.0.1 - - [10/Jan/2025 20:37:52] "POST /submit HTTP/1.1" 200 -
+2025-01-10 20:38:00,524 - Malicious payload detected: username=admin&password=admin
+2025-01-10 20:38:00,524 - Blocked malicious request: username=admin&password=admin
+2025-01-10 20:38:00,525 - 127.0.0.1 - - [10/Jan/2025 20:38:00] "[31m[1mPOST /submit HTTP/1.1[0m" 403 -
+2025-01-10 20:38:05,657 - Malicious payload detected: username=user&password=admin
+2025-01-10 20:38:05,658 - Blocked malicious request: username=user&password=admin
+2025-01-10 20:38:05,659 - 127.0.0.1 - - [10/Jan/2025 20:38:05] "[31m[1mPOST /submit HTTP/1.1[0m" 403 -
+2025-01-10 20:38:09,945 - Safe request processed: username=user&password=user
+2025-01-10 20:38:09,947 - 127.0.0.1 - - [10/Jan/2025 20:38:09] "POST /submit HTTP/1.1" 200 -
+2025-01-10 20:39:56,097 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-10 20:39:56,097 - [33mPress CTRL+C to quit[0m
+2025-01-10 20:39:56,097 -  * Restarting with stat
+2025-01-10 20:39:57,122 -  * Debugger is active!
+2025-01-10 20:39:57,122 -  * Debugger PIN: 998-096-148
+2025-01-10 20:40:01,566 - 127.0.0.1 - - [10/Jan/2025 20:40:01] "GET / HTTP/1.1" 200 -
+2025-01-10 20:40:05,888 - Malicious payload detected: username=admin&password=aadmin
+2025-01-10 20:40:05,889 - Blocked malicious request: username=admin&password=aadmin
+2025-01-10 20:40:05,890 - 127.0.0.1 - - [10/Jan/2025 20:40:05] "[31m[1mPOST /submit HTTP/1.1[0m" 403 -
+2025-01-10 20:40:11,549 - Malicious payload detected: username=admin&password=admin
+2025-01-10 20:40:11,549 - Blocked malicious request: username=admin&password=admin
+2025-01-10 20:40:11,550 - 127.0.0.1 - - [10/Jan/2025 20:40:11] "[31m[1mPOST /submit HTTP/1.1[0m" 403 -
+2025-01-10 20:40:19,611 - Malicious payload detected: username=user&password=admin
+2025-01-10 20:40:19,611 - Blocked malicious request: username=user&password=admin
+2025-01-10 20:40:19,612 - 127.0.0.1 - - [10/Jan/2025 20:40:19] "[31m[1mPOST /submit HTTP/1.1[0m" 403 -
+2025-01-10 20:40:26,213 - Malicious payload detected: username=admin&password=password
+2025-01-10 20:40:26,213 - Blocked malicious request: username=admin&password=password
+2025-01-10 20:40:26,214 - 127.0.0.1 - - [10/Jan/2025 20:40:26] "[31m[1mPOST /submit HTTP/1.1[0m" 403 -
+2025-01-10 20:40:31,264 - Safe request processed: username=user&password=password
+2025-01-10 20:40:31,269 - 127.0.0.1 - - [10/Jan/2025 20:40:31] "POST /submit HTTP/1.1" 200 -
+2025-01-10 20:40:36,196 - Safe request processed: username=user' --&password=password
+2025-01-10 20:40:36,197 - 127.0.0.1 - - [10/Jan/2025 20:40:36] "POST /submit HTTP/1.1" 200 -
+2025-01-10 20:41:13,246 - Safe request processed: username=user&password=user
+2025-01-10 20:41:13,247 - 127.0.0.1 - - [10/Jan/2025 20:41:13] "POST /submit HTTP/1.1" 200 -
+2025-01-10 20:41:21,957 - Malicious payload detected: username=user&password=' OR 1=1
+2025-01-10 20:41:21,957 - Blocked malicious request: username=user&password=' OR 1=1
+2025-01-10 20:41:21,958 - 127.0.0.1 - - [10/Jan/2025 20:41:21] "[31m[1mPOST /submit HTTP/1.1[0m" 403 -
+2025-01-10 20:44:29,282 -  * Detected change in '/home/anshul/projects/ai_threat_detection/server_with_detection.py', reloading
+2025-01-10 20:44:29,459 -  * Restarting with stat
+2025-01-10 20:44:30,445 -  * Debugger is active!
+2025-01-10 20:44:30,446 -  * Debugger PIN: 998-096-148
+2025-01-10 20:45:39,063 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-10 20:45:39,063 - [33mPress CTRL+C to quit[0m
+2025-01-10 20:45:39,064 -  * Restarting with stat
+2025-01-10 20:45:39,881 -  * Debugger is active!
+2025-01-10 20:45:39,881 -  * Debugger PIN: 443-535-723
+2025-01-10 20:45:44,490 - 127.0.0.1 - - [10/Jan/2025 20:45:44] "GET / HTTP/1.1" 200 -
+2025-01-10 20:45:49,850 - Safe request processed: username=user&password=user
+2025-01-10 20:45:49,851 - 127.0.0.1 - - [10/Jan/2025 20:45:49] "POST /submit HTTP/1.1" 200 -
+2025-01-10 20:45:56,722 - Safe request processed: username=user' --&password=user
+2025-01-10 20:45:56,723 - 127.0.0.1 - - [10/Jan/2025 20:45:56] "POST /submit HTTP/1.1" 200 -
+2025-01-10 20:46:01,730 - Malicious payload detected: username=admin&password=user
+2025-01-10 20:46:01,731 - Blocked malicious request: username=admin&password=user
+2025-01-10 20:46:01,731 - 127.0.0.1 - - [10/Jan/2025 20:46:01] "[31m[1mPOST /submit HTTP/1.1[0m" 403 -
+2025-01-10 20:46:05,109 - Malicious payload detected: username=admin' --&password=user
+2025-01-10 20:46:05,110 - Blocked malicious request: username=admin' --&password=user
+2025-01-10 20:46:05,110 - 127.0.0.1 - - [10/Jan/2025 20:46:05] "[31m[1mPOST /submit HTTP/1.1[0m" 403 -
+2025-01-10 20:46:11,498 - 127.0.0.1 - - [10/Jan/2025 20:46:11] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2025-01-10 20:46:11,621 - 127.0.0.1 - - [10/Jan/2025 20:46:11] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-10 20:46:11,624 - 127.0.0.1 - - [10/Jan/2025 20:46:11] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-10 20:46:11,634 - 127.0.0.1 - - [10/Jan/2025 20:46:11] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-10 20:46:11,697 - 127.0.0.1 - - [10/Jan/2025 20:46:11] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-01-10 20:46:11,708 - 127.0.0.1 - - [10/Jan/2025 20:46:11] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=a2x4pZUHS9ReUtHO7Hvr HTTP/1.1" 200 -
+2025-01-11 09:38:12,271 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-11 09:38:12,271 - [33mPress CTRL+C to quit[0m
+2025-01-11 09:38:12,272 -  * Restarting with stat
+2025-01-11 09:38:13,236 -  * Debugger is active!
+2025-01-11 09:38:13,244 -  * Debugger PIN: 710-094-892
+2025-01-11 09:38:30,853 - 127.0.0.1 - - [11/Jan/2025 09:38:30] "GET / HTTP/1.1" 200 -
+2025-01-11 09:38:30,960 - 127.0.0.1 - - [11/Jan/2025 09:38:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-11 09:38:35,315 - Malicious payload detected: username=admin&password=dmin
+2025-01-11 09:38:35,315 - Blocked malicious request: username=admin&password=dmin
+2025-01-11 09:38:35,315 - 127.0.0.1 - - [11/Jan/2025 09:38:35] "[31m[1mPOST /submit HTTP/1.1[0m" 403 -
+2025-01-11 09:38:42,065 - Safe request processed: username=user&password=dmin
+2025-01-11 09:38:42,065 - 127.0.0.1 - - [11/Jan/2025 09:38:42] "POST /submit HTTP/1.1" 200 -
