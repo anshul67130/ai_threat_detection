@@ -78,12 +78,6 @@ def submit():
         "username": username
     })
 
-@app.route('/dashboard')
-def dashboard():
-    """
-    Render the real-time dashboard.
-    """
-    return render_template('dashboard.html')
 
 @app.route('/logs')
 def logs():
